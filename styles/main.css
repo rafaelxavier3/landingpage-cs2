@@ -1,0 +1,56 @@
+main {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.main_info {
+  width: 100%;
+}
+
+.main_img {
+  margin-top: 70px;
+  padding-left: 100px;
+}
+
+.main_info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 27px;
+}
+
+.main_info div {
+  display: flex;
+  gap: 32px;
+}
+
+.main_info div a,
+.main_info div button {
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skew(-10deg);
+}
+
+.main_info div a {
+  background: #ff9b01;
+  color: black;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 14px 0;
+}
+
+.main_info button {
+  background: transparent;
+  border: 1px solid rgb(5, 5, 107);
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+}

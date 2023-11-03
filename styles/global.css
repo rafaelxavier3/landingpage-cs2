@@ -1,0 +1,148 @@
+@import url(background.css);
+@import url(header.css);
+@import url(main.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #edf1f7;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--text);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  header {
+    max-width: 900px;
+  }
+
+  main {
+    padding-left: 50px;
+    gap: 50px;
+  }
+
+  .main_info img {
+    width: 300px;
+  }
+
+  .main_img {
+    width: 500px;
+    padding-left: 0;
+  }
+
+  .main_info p {
+    font-size: 14px;
+  }
+
+  .main_info div a,
+  .main_info div button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-left: 20px;
+  }
+  header img {
+    width: 50px;
+  }
+
+  .nav_link {
+    font-size: 12px;
+  }
+
+  .nav_social {
+    margin-right: 40px;
+  }
+
+  .main_img {
+    display: none;
+  }
+
+  .main_info img {
+    width: 400px;
+    margin-left: 120px;
+  }
+
+  .main_info {
+    padding-top: 80px;
+    max-width: 668px;
+  }
+
+  .main_info p {
+    font-size: 17px;
+  }
+
+  .main_info div {
+    display: flex;
+    gap: 32px;
+  }
+
+  .main_info div a,
+  .main_info div button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 414px) {
+  header {
+    flex-direction: column;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .nav_social {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_info {
+    max-width: 310px;
+    padding-top: 0px;
+  }
+
+  .main_info img {
+  }
+
+  .main_info p {
+    font-size: 15px;
+  }
+
+  .main_info img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .main_info div a,
+  .main_info div button {
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .main_info div a {
+    padding: 8px 0;
+  }
+}
